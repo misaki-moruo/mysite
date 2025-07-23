@@ -43,7 +43,7 @@ img {
     align-items: center;
     background-color: #E6FCF6;
     padding-inline: 2%;
-    
+
 
     img {
         vertical-align: bottom;
@@ -80,7 +80,7 @@ img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate( -50% , -50%); 
+        transform: translate(-50%, -50%);
         white-space: nowrap;
         text-align: center;
         padding-inline: 1%;
@@ -89,7 +89,9 @@ img {
             font-family: "DotGothic16", sans-serif;
             font-size: 3.5rem;
             color: white;
-            text-shadow: 4px 4px 4px rgba(51,51,51,0.4);
+            text-shadow: 4px 4px 4px rgba(51, 51, 51, 0.4);
+            opacity: 0;
+            animation: fadein 5s forwards;
         }
 
         a {
@@ -113,8 +115,10 @@ img {
     &-charas {
         position: absolute;
         top: 85%;
-        left: 50%;
-        transform: translate( -50% , -85%);
+        left: 15%;
+        transform: translate(-15%,-85%);
+        display: flex;
+        white-space: nowrap;
         padding-inline: 1%;
 
         &-chara {
@@ -127,7 +131,7 @@ img {
         position: absolute;
         top: 98%;
         left: 50%;
-        transform: translate( -50% , -98%);
+        transform: translate(-50%, -98%);
         padding-inline: 1%;
 
         p {
@@ -141,18 +145,40 @@ img {
 
 // animation 
 
-.char1 {
-    animation-delay: 2s;
+.char1,.char2,.char3,
+.char9,.char10,.char11{
+    animation-delay: 4s;
 }
-.char2 {
-    animation-delay: 1s;
-}
-.char3 {
+.char4,.char8{
     animation-delay: 3s;
 }
+.char5 {
+    animation-delay: 1s;
+}
+.char6 {
+    animation-delay: 0s;
+}
+.char7 {
+    animation-delay: 2s;
+}
+
 
 @keyframes fade {
     to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
 }

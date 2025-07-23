@@ -71,6 +71,8 @@ img {
   font-size: 3.5rem;
   color: white;
   text-shadow: 4px 4px 4px rgba(51, 51, 51, 0.4);
+  opacity: 0;
+  animation: fadein 5s forwards;
 }
 .mainvisual-title a {
   color: #E6FCF6;
@@ -90,8 +92,10 @@ img {
 .mainvisual-charas {
   position: absolute;
   top: 85%;
-  left: 50%;
-  transform: translate(-50%, -85%);
+  left: 15%;
+  transform: translate(-15%, -85%);
+  display: flex;
+  white-space: nowrap;
   padding-inline: 1%;
 }
 .mainvisual-charas-chara {
@@ -112,20 +116,40 @@ img {
   text-align: center;
 }
 
-.char1 {
-  animation-delay: 2s;
+.char1, .char2, .char3,
+.char9, .char10, .char11 {
+  animation-delay: 4s;
 }
 
-.char2 {
+.char4, .char8 {
+  animation-delay: 3s;
+}
+
+.char5 {
   animation-delay: 1s;
 }
 
-.char3 {
-  animation-delay: 3s;
+.char6 {
+  animation-delay: 0s;
+}
+
+.char7 {
+  animation-delay: 2s;
 }
 
 @keyframes fade {
   to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
