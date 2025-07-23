@@ -1,0 +1,131 @@
+html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "M PLUS 2", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header {
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E6FCF6;
+  padding-inline: 2%;
+}
+#header img {
+  vertical-align: bottom;
+}
+#header #navi ul {
+  display: flex;
+  align-items: center;
+}
+#header #navi ul li {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.mainvisual {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-image: url(img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mainvisual-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  padding-inline: 1%;
+}
+.mainvisual-title h1 {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 4px 4px 4px rgba(51, 51, 51, 0.4);
+}
+.mainvisual-title a {
+  color: #E6FCF6;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 5px solid #E6FCF6;
+  background-color: #1EAA94;
+  border-radius: 50px;
+  transition: all 0.3s;
+  padding: 5px 30px 10px;
+}
+.mainvisual-title a img {
+  width: 50px;
+  height: 50px;
+  vertical-align: bottom;
+}
+.mainvisual-charas {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  padding-inline: 1%;
+}
+.mainvisual-charas-chara {
+  opacity: 0;
+  animation: fade 1s forwards;
+}
+.mainvisual-text {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -98%);
+  padding-inline: 1%;
+}
+.mainvisual-text p {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.char1 {
+  animation-delay: 2s;
+}
+
+.char2 {
+  animation-delay: 1s;
+}
+
+.char3 {
+  animation-delay: 3s;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
