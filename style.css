@@ -322,3 +322,19 @@ img {
   height: 50px;
   vertical-align: bottom;
 }
+
+/* faq */
+* {
+  border: 1px solid red;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-speech {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
