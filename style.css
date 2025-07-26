@@ -77,7 +77,6 @@ ul {
 
 
 
-
 /* mainvisual */
 
 
@@ -175,8 +174,8 @@ ul {
 
 
 
-
-.wrapper1 {
+/* about~introductionまで */
+.top-wrapper {
   background-color: #E6FCF6;
 }
 
@@ -205,20 +204,20 @@ ul {
   width: 60%;
 }
 
-.about-top {
+.about-contents-text-top {
   font-size: 30px;
   font-weight: bold;
   margin: 50px 0 10px 80px;
 }
 
-.about-center {
+.about-contents-text-center {
   font-size: 36px;
   font-weight: bold;
   color: #1EAA94;
   margin-block: 0px;
 }
 
-.about-bottom {
+.about-contents-text-bottom {
   font-size: 18px;
   font-weight: 400;
 }
@@ -231,13 +230,7 @@ ul {
 
 
 
-
-/* introduction */
-
-
-#introduction {
-  padding-top: 100px;
-}
+/* section-title */
 
 .section-title {
   max-width: 1000px;
@@ -259,6 +252,14 @@ ul {
 
 
 
+
+/* introduction */
+
+
+#introduction {
+  padding-top: 100px;
+}
+
 .introduction-list {
   max-width: 1300px;
   margin-inline: auto;
@@ -266,15 +267,69 @@ ul {
 }
 
 .introduction-list li {
+  height: 350px;
   display: flex;
   justify-content: center;
   padding: 30px;
   margin-bottom: 50px;
 }
 
-.introduction-list li img {
+.introduction-imgs {
   width: 40%;
-  height: auto;
+  position: relative;
+}
+
+
+.introduction-imgs li {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  padding: 5px;
+  margin-bottom: 0;
+  animation: fade 15s infinite;
+}
+
+.introduction-imgs li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.introduction-imgs li:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.introduction-imgs li:nth-child(3) {
+    animation-delay: 10s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.introduction-imgs li img {
+  width: 100%;
   border: 3px solid #1EAA94;
   border-radius: 30px;
 }
@@ -284,9 +339,8 @@ ul {
   margin-left: 50px;
 }
 
-.intro-left .introduction-text {
-  margin-left: 0;
-  margin-right: 50px;
+.introduction-left .introduction-text {
+  margin-inline: 0 50px;
 }
 
 
@@ -301,20 +355,20 @@ ul {
   text-align: justify;
 }
 
-.intro-right {
+.introduction-right {
   background-color: #f3fffa;
   box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
   border-radius: 30px;
 }
 
-.intro-left {
+.introduction-left {
   background-color: #E6FCF6;
   box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
   border-radius: 30px;
 }
 
 
-.intro-speech {
+.introduction-speech-items {
   max-width: 1100px;
   display: flex;
   justify-content: center;
@@ -322,20 +376,49 @@ ul {
   margin: 0 auto 30px;
 }
 
-.speech img {
-  width: 100%;
-  overflow: unset;
-}
-
-.speech .teacher {
+.introduction-speech-chara{
   width: 15%;
   height: auto;
 }
 
-.speech .speech-box {
+.introduction-speech-chara img {
+  width: 150px;
+  height: 150px;
+  overflow: unset;
+}
+
+
+.introduction-speech-box {
   width: 80%;
   height: auto;
+}
 
+.introduction-speech-box p {
+  font-size: 1.25rem;
+  background-color: #f3fffa;
+  padding: 5% 8%;
+  text-align: justify;
+  border: 3.5px solid #1EAA94;
+  border-radius: 5px;
+  position: relative;
+}
+
+.introduction-speech-box p::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: 100%;
+  border: 10px solid transparent;
+  border-right: 10px solid #1EAA94;
+}
+
+.introduction-speech-box p::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  right: 100%;
+  border: 7px solid transparent;
+  border-right: 6px solid #f3fffa;
 }
 
 
@@ -362,6 +445,7 @@ ul {
   height: 50px;
   vertical-align: bottom;
 }
+
 
 
 
