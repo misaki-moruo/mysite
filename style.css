@@ -630,9 +630,9 @@ p {
 .introduction-speech-box p::after {
   content: "";
   position: absolute;
-  top: 65%;
+  top: 62%;
   right: 100%;
-  border: 7px solid transparent;
+  border: 6.5px solid transparent;
   border-right: 6px solid #f3fffa;
 }
 
@@ -682,14 +682,13 @@ p {
 #user-voice ul {
   max-width: 1300px;
   margin-inline: auto;
-  padding-inline: 16px;
   display: flex;
   gap: 15px;
 }
 
 .user-interview {
   width: calc(100%/3);
-  height: calc(100vh - 430px);
+  height: auto;
   background-color: #f2f9f6;
   border: 5px solid #1EAA94;
   border-radius: 20px;
@@ -699,10 +698,8 @@ p {
 
 #user-voice .user-interview .interview-q {
   width: 100%;
-  height: 23%;
-  padding: 20px;
+  padding: 30px 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -713,7 +710,7 @@ p {
 
 /*吹き出しの本体*/
 .interview-q p {
-font-size: 1.25rem;
+font-size: 1.2rem;
   background-color: #f3fffa;
   padding: 5% 8%;
   text-align: justify;
@@ -747,7 +744,6 @@ font-size: 1.25rem;
 }
 
 .interview-a-up p {
-  font-size: 1.2rem;
   height: 75%;
   text-align: justify;
 }
@@ -757,12 +753,11 @@ font-size: 1.25rem;
 }
 
 .interview-a-down img {
-  width: 40%;
+  margin-bottom: 30px;
 }
 
 .interview-a-up {
   width: 88%;
-  height: 55%;
   background-color: #f3fffa;
   margin: 0 auto;
   padding: 5%;
@@ -790,8 +785,6 @@ font-size: 1.25rem;
   border: 7px solid transparent;
   border-top: 6px solid #f3fffa;
 }
-
-
 
 
 /*login*/
@@ -824,7 +817,6 @@ font-size: 1.25rem;
 
 .step-left .step-image img {
   width: 100%;
-  /* text-align : center; */
   margin: 30px auto;
   border-bottom: 8px solid #73E0CB;
 }
@@ -843,7 +835,6 @@ font-size: 1.25rem;
 }
 
 .step-right h2 {
-  width: 400px;
   height: 50px;
   font-size: 1.7rem;
   color: #1EAA94;
@@ -866,12 +857,6 @@ font-size: 1.25rem;
 
 
 
-
-
-/* faq */
-/* * {
-  border: 1px solid red;
-} */
 
 #faq {
   background-image: url(img/background01.png);
@@ -1101,11 +1086,6 @@ footer .copyright {
   text-align: center;
   padding-block: 5px;
 }
-
-/* .footer_icon {
-  justify-content: flex-end;
-  margin-top: 20px;
-} */
 
 
 
@@ -1355,6 +1335,109 @@ footer .copyright {
 }
 
 
+
+  /*user-voice*/
+  .section-title-around{
+    margin: 50px auto;
+  }
+  
+    .voice-title h3 {
+      padding: 0 10%;
+    }
+  
+    #user-voice ul {
+      padding: 0 7% 15%;
+      flex-direction: column;
+    }
+  
+    .user-interview {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .interview-a-down {
+      padding-bottom: 20px;
+    }
+  
+    /*吹き出しの枠*/
+    .interview-q p::before {
+      content: "";
+      position: absolute;
+      top: 60%;
+      right: 100%;
+      border: 10px solid transparent;
+      border-right: 10px solid #1EAA94;
+    }
+  
+    /*吹き出しの三角形の内側のところ*/
+    .interview-q p::after {
+      content: "";
+      position: absolute;
+      top: 64%;
+      right: 100%;
+      border: 6.5px solid transparent;
+      border-right: 6px solid #f3fffa;
+    }
+  
+  /*吹き出しの三角形の枠線のところ*/
+  .interview-a-up::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    border: 10px solid transparent;
+    border-top: 10px solid #1EAA94;
+  }
+  
+  /*吹き出しの三角形の内側のところ*/
+  .interview-a-up::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 46%;
+    border: 6.5px solid transparent;
+    border-top: 6px solid #f3fffa;
+  }
+  
+  
+  /*login*/
+  .step{
+    /* width: 100%; */
+    height: auto;
+    flex-direction:column;
+  }
+  
+  .step-left{
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-right{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .step-left .step-title p{
+    font-size: 3rem;
+    padding: 30px 0 10px;
+  }
+  
+  .step-left .step-image img{
+    margin: 0 auto 25px;
+  }
+  
+  .step-right h2{
+  width: 100%;
+    height: auto;
+    border-bottom: none;
+  }
+  
+  .step-right p{
+    margin-bottom:50px;
+  }
+  
 
 /* faq */
 
