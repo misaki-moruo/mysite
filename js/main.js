@@ -6,4 +6,13 @@ $(function(){
     $("html, body").animate({ scrollTop: position }, 600, "swing");
     return false;
   });
+
+
+  $(".toggle_btn").on("click", function () {
+    $("header").toggleClass("open");
+  });
+
+  $("#sp-navi a").on("click", function () {
+    $("header").toggleClass("open");
+  });
 });
