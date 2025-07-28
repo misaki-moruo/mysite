@@ -18,7 +18,7 @@
 <body>
   <header id="header">
     <a href="index.html"><img src="img/logo1.png" alt="ロゴ"></a>
-    <nav id="navi">
+    <nav id="pc-navi">
       <ul>
         <li><a href="#about">メタリーフとは？</a></li>
         <li><a href="#introduction">コンテンツ紹介</a></li>
@@ -27,20 +27,40 @@
         <li><a href="#faq">FAQよくある質問</a></li>
       </ul>
     </nav>
+
+    <nav id="sp-navi">
+      <ul>
+        <a href="index.html"><img src="img/logo1.png" alt="ロゴ" class="sp-logo"></a>
+        <li><a href="#about">メタリーフとは？</a></li>
+        <li><a href="#introduction">コンテンツ紹介</a></li>
+        <li><a href="#usre-voice">活用している人の声</a></li>
+        <li><a href="#login">登録の流れ</a></li>
+        <li><a href="#faq">FAQよくある質問</a></li>
+      </ul>
+      <div class="join_btn">
+        <a href="#">今すぐ参加してみる！<img src="img/good.png" alt="見出し(goodの手)"></a>
+      </div>
+    </nav>
+
+    <div class="toggle_btn">
+      <span></span>
+      <span></span>
+    </div>
+
   </header>
 
   <main>
     <div id="mainvisual" class="mainvisual">
       <div class="mainvisual-title">
         <h1>
-          <span style="--i:0">「</span>
+          <span style="--i:0" class="brackets">「</span>
           <span style="--i:1">は</span>
           <span style="--i:2">じ</span>
           <span style="--i:3">め</span>
           <span style="--i:4">よ</span>
           <span style="--i:5">う</span>
           <span style="--i:6">、</span>
-          <span style="--i:7">自</span>
+          <br class="spbr"><span style="--i:7">自</span>
           <span style="--i:8">分</span>
           <span style="--i:9">の</span>
           <span style="--i:10">"</span>
@@ -51,7 +71,7 @@
           <span style="--i:15">場</span>
           <span style="--i:16">へ</span>
           <span style="--i:17">!</span>
-          <span style="--i:17">」</span>
+          <span style="--i:18" class="brackets">」</span>
         </h1>
         <a href="https://app.metalife.co.jp/spaces">今すぐ参加してみる！<img src="img/bud.png" alt="メインヴィジュアルボタン"></a>
       </div>
@@ -175,7 +195,7 @@
 
       <section id="user-voice" class="wrapper2">
         <div class="section-title-around">
-        <h2 class="section-title"><img src="./img/見出し用/user-voice.png">活用している人たちの声</h2>
+          <h2 class="section-title"><img src="./img/見出し用/user-voice.png">活用している人たちの声</h2>
         </div>
 
         <div class="voice-title">
@@ -253,7 +273,7 @@
 
       <section id="login">
         <div class="section-title-around">
-        <h2 class="section-title"><img src="./img/見出し用/login-bell.png">登録の流れ</h2>
+          <h2 class="section-title"><img src="./img/見出し用/login-bell.png">登録の流れ</h2>
         </div>
 
         <ul class="login-list">
@@ -320,7 +340,7 @@
 
       <section id="faq">
         <div class="section-title-around">
-        <h2 class="section-title"><img src="img/FAQ.png">FAQよくある質問</h2>
+          <h2 class="section-title"><img src="img/FAQ.png">FAQよくある質問</h2>
         </div>
 
         <div class="container">
