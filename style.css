@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: "M PLUS 2", sans-serif;
+  font-size: 16px;
   padding: 0;
   margin: 0;
 }
@@ -39,7 +40,7 @@ ul {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 
@@ -139,7 +140,7 @@ p {
 
 .mainvisual-title h1 span {
   display: inline-block;
-  font-size: 50px;
+  font-size: 3.5rem;
   opacity: 0;
   transform: translateY(20px);
   animation: showup 1.8s forwards;
@@ -160,7 +161,7 @@ p {
 
 .mainvisual-title a {
   color: #E6FCF6;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   border: 5px solid #E6FCF6;
   background-color: #1EAA94;
@@ -376,7 +377,7 @@ p {
 }
 
 .mainvisual-text p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -413,23 +414,24 @@ p {
 
 .about-contents-text {
   width: 60%;
+  margin-left: 50px;
 }
 
 .about-contents-text-top {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 50px;
 }
 
 .about-contents-text-center {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   color: #1EAA94;
   margin-block: 10px;
 }
 
 .about-contents-text-bottom {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -483,11 +485,11 @@ p {
 }
 
 .introduction-list li {
-  height: auto;
+  height: 300px;
   display: flex;
   justify-content: center;
   padding: 50px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .introduction-right {
@@ -510,7 +512,7 @@ p {
 
 .introduction-imgs li {
   width: 100%;
-  height: 30vh;
+  height: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -574,16 +576,16 @@ p {
 .introduction-text h3 {
   font-size: 24px;
   color: #1EAA94;
-  margin-top: 0px;
+  margin-block: 0px 10px;
 }
 
 .introduction-text p {
   text-align: justify;
 }
 
-.introduction-text p span {
+/* .introduction-text p span {
   color: #1EAA94;
-}
+} */
 
 
 
@@ -613,7 +615,7 @@ p {
 }
 
 .introduction-speech-box p {
-  font-size: 24px;
+  font-size: 1.5rem;
   background-color: #f3fffa;
   padding: 5% 8%;
   text-align: justify;
@@ -640,6 +642,11 @@ p {
   border-right: 6px solid #f3fffa;
 }
 
+.introduction-speech-box p span {
+  color: #1EAA94;
+  font-size: 1.7rem;
+}
+
 
 
 .join-btn {
@@ -649,7 +656,7 @@ p {
 
 .join-btn a {
   color: #1EAA94;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   border: 5px solid #1EAA94;
   background-color: white;
@@ -666,7 +673,7 @@ p {
 
 .join-btn a:hover {
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   border: 5px solid white;
   background-color: #1EAA94;
@@ -1199,13 +1206,12 @@ footer .copyright {
 #sp-navi a {
   color: #1EAA94;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-.join-btn a img {
-  vertical-align: bottom;
+#sp-navi .sp-good {
+  width: 32px;
 }
-
 
 .open #sp-navi {
   opacity: 1;
@@ -1221,7 +1227,7 @@ footer .copyright {
 
 
 .mainvisual-title h1 span {
-  font-size: 38px;
+  font-size: 2.25rem;
 }  
 
 
@@ -1245,6 +1251,15 @@ footer .copyright {
 .about-contents-text {
   width: 100%;
   text-align: center;
+  margin-left: 0;
+}
+
+.about-contents-text-top {
+  margin-top: 0;
+}
+
+.about-contents-text-center {
+  font-size: 2.5rem;
 }
 
 
@@ -1291,11 +1306,12 @@ footer .copyright {
   top: 3%;
   left: 50%;
   transform: translateX(-50%);
+  padding-top: 10px;
 }  
 
 .introduction-imgs li img{
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   object-fit: fill;
 }  
   
@@ -1303,7 +1319,7 @@ footer .copyright {
 .introduction-text {
   width: 100%;
   margin-left: 0px;
-  padding-top: 320px;
+  padding-top: 350px;
 }
 
 .introduction-left .introduction-text {
@@ -1530,6 +1546,9 @@ footer .footer_nav {
 
 
 
+
+
+
 @media ( max-width:700px ) {
 
 
@@ -1540,19 +1559,16 @@ footer .footer_nav {
 }
 
 .mainvisual-title h1 span {
-  font-size: 33px;
+  font-size: 2rem;
 }  
 
-.mainvisual-title .brackets {
-  display: none;
-}
 
 .mainvisual-title .spbr {
   display: block;
 } 
 
 .mainvisual-title a {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .mainvisual-title a img {
@@ -1565,22 +1581,22 @@ footer .footer_nav {
 }
 
 .mainvisual-text p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 
 /* about */
 
 .about-contents-text-top {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .about-contents-text-center {
-  font-size: 24px;
+  font-size: 1.55rem;
 }
 
 .about-contents-text-bottom {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .about-img img {
@@ -1606,7 +1622,7 @@ footer .footer_nav {
 }  
   
 .introduction-text {
-  padding-top: 230px;
+  padding-top: 300px;
 }
 
 .introduction-text h3 {
@@ -1619,7 +1635,11 @@ footer .footer_nav {
 }
 
 .introduction-speech-box p {
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.introduction-speech-box p span {
+  font-size: 1.4rem;
 }
 
 .join-btn {
@@ -1628,11 +1648,12 @@ footer .footer_nav {
 }
 
 .join-btn a {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 5px 10px 10px;
 }
 
 .join-btn a img {
+  width: 32px;
   vertical-align: bottom;
 }
 
