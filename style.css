@@ -916,25 +916,25 @@ font-size: 1.2rem;
 
 
 
-
+/* faq */
 
 #faq {
   background-image: url(img/background01.png);
   background-size: cover;
+  padding-top: 100px;
   padding-bottom: 50px;
-  margin-top: 100px;
 }
 
 #faq .container {
   max-width: 1300px;
-  padding-inline: 16px;
+  padding-inline: 3%;
   margin: 100px auto 0;
 }
 
 #faq .faq-box {
-  margin: -20px auto;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
+  margin: -20px auto;
 }
 
 .faq-wrapper {
@@ -958,12 +958,12 @@ font-size: 1.2rem;
   width: 100%;
   display: inline-block;
   position: relative; 
-  padding: 17px 13px;
-  margin-top: 15px;
   border-radius: 12px;
   background-color: #E6FCF6;
   border: 3.5px solid #1EAA94;
   box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
+  padding: 17px 20px;
+  margin-top: 15px;
 }
 
 .says:before {
@@ -991,11 +991,11 @@ font-size: 1.2rem;
   width: 100%;
   display: inline-block;
   position: relative; 
-  padding: 17px 13px;
   border-radius: 12px;
   background-color: #1EAA94;
   border: 3.5px solid rgb(226, 226, 226);
   box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
+  padding: 17px 20px;
 }
 
 .answer:before {
@@ -1034,12 +1034,10 @@ font-size: 1.2rem;
 }
 
 .char_people {
-  /* display: grid;
-  grid-template-rows: 60px 60px 60px;
-  grid-template-columns: 60px 60px 60px; */
   position: relative;
   width: 140px;
   height: 150px;
+  margin-right: 20px;
 }
 
 .char_people img {
@@ -1047,30 +1045,22 @@ font-size: 1.2rem;
 }
 
 #char1 {
-  /* grid-row: 1/3;
-  grid-column: 1/2; */
   position: absolute;
   top: 30px;
   right: 70px
 }
 
 #char2 {
-  /* grid-row: 1/3;
-  grid-column: 1/2; */
   position: absolute;
   top: 30px;
   right: 10px;
 }
 #char3 {
-  /* grid-row: 1/3;
-  grid-column: 1/2; */
   position: absolute;
   top: 0px;
   right: 40px;
 }
 #char4 {
-  /* grid-row: 1/3;
-  grid-column: 1/2; */
   position: absolute;
   top: 60px;
   right: 40px;
@@ -1142,12 +1132,13 @@ footer .footer_nav,.footer_icon {
 }
 
 footer nav {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-footer .copyright {
+.copyright {
   font-size: 10px;
   text-align: center;
+  background-color: #E6FCF6;
   padding-block: 5px;
 }
 
@@ -1565,8 +1556,8 @@ footer a {
 }
 
 footer nav {
-  margin: -5px auto 0 auto; 
   text-align: center;
+  margin: -5px auto 0 auto; 
 }
 
 footer .footer_nav {
