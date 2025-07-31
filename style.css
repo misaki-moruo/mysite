@@ -1360,8 +1360,10 @@ footer nav {
   }
 
   #sp-navi-btn a:hover {
-    color: white;
-    padding-inline: 50px;
+    color: #1EAA94;
+    font-size: 1.25rem;
+    background-color: white;
+    border: 5px solid #1EAA94;
   }
 
 
@@ -1378,6 +1380,16 @@ footer nav {
     width: 12%;
   }
 
+  .mainvisual-title a:hover {
+    color: #E6FCF6;
+    font-size: 2rem;
+    border: 5px solid #E6FCF6;
+    background-color: #1EAA94;
+  }
+  
+  .mainvisual-title a:hover img {
+    width: 48px;
+  }
 
   /* about */
 
@@ -1572,7 +1584,6 @@ footer nav {
 
   /*login*/
   .step {
-    /* width: 100%; */
     height: auto;
     flex-direction: column;
   }
@@ -1615,6 +1626,26 @@ footer nav {
   .step-right p {
     margin-bottom: 50px;
   }
+
+/*join-btn*/
+.join-btn a:hover {
+  color: #1EAA94;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 5px solid #1EAA94;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
+  padding: 5px 30px 10px;
+}
+
+.join-btn a:hover img {
+  width: 50px;
+  vertical-align: bottom;
+}
+
+
 
 
   /* faq */
@@ -1719,6 +1750,16 @@ footer nav {
     vertical-align: bottom;
   }
 
+  .mainvisual-title a:hover {
+    color: #E6FCF6;
+    font-size: 1.25rem;
+    border: 5px solid #E6FCF6;
+    background-color: #1EAA94;
+  }
+  
+  .mainvisual-title a:hover img {
+    width: 32px;
+  }
 
 
 
@@ -1834,6 +1875,18 @@ footer nav {
     vertical-align: bottom;
   }
 
+  .join-btn a:hover {
+    color: #1EAA94;
+    font-size: 1.25rem;
+    border: 3.5px solid #1EAA94;
+    background-color: white;
+    padding:5px 20px 10px;
+  }
+  
+  .join-btn a:hover img {
+    width: 32px;
+    /* vertical-align: bottom; */
+  }
 
   /*step*/
   .login-list {
@@ -1844,6 +1897,7 @@ footer nav {
     font-size: 2.875rem;
   }
 
+  
   /* footer */
   footer {
     flex-direction: column;
@@ -1868,6 +1922,7 @@ footer nav {
 
 }
 
+
 @media (max-width:550px) {
   /* faq */
   .says p,.answer p {
@@ -1879,6 +1934,7 @@ footer nav {
   }
 }
 
+
 @media (max-width:405px) {
 
 /*step*/
@@ -1887,6 +1943,10 @@ font-size: 1.4rem;
 }
 
   #sp-navi-btn a {
+    font-size: 1.1rem;
+  }
+
+  #sp-navi-btn a:hover{
     font-size: 1.1rem;
   }
 
