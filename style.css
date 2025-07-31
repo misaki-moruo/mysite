@@ -1360,13 +1360,8 @@ footer nav {
   }
 
   #sp-navi-btn a:hover {
-    font-size: 1.875rem;
     color: white;
     padding-inline: 50px;
-  }
-
-  #sp-navi-btn a:hover img {
-    width: 46px;
   }
 
 
@@ -1732,18 +1727,13 @@ footer nav {
     font-size: 1.25rem;
   }
 
-  .mainvisual-title a:hover {
-    font-size: 1.875rem;
-  }
-
   .mainvisual-title a img {
     width: 32px;
     vertical-align: bottom;
   }
 
-  .mainvisual-title a:hover img {
-    width: 42px;
-  }
+
+
 
   .mainvisual-charas-chara {
     width: 15%;
@@ -1857,31 +1847,6 @@ footer nav {
     vertical-align: bottom;
   }
 
-  .join-btn a:hover {
-    color: white;
-    font-size: 1.875rem;
-    font-weight: 600;
-    border: 5px solid white;
-    background-color: #1EAA94;
-    border-radius: 50px;
-    box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
-    opacity: 1;
-    padding: 5px 40px 10px;
-  }
-
-  .join-btn a:hover img {
-    width: 50px;
-  }
-
-  #sp-navi-btn a:hover {
-    font-size: 1.55rem;
-    color: white;
-    padding-inline: 50px;
-  }
-
-  #sp-navi-btn a:hover img {
-    width: 42px;
-  }
 
   /*step*/
   .login-list {
@@ -1892,50 +1857,18 @@ footer nav {
     font-size: 2.875rem;
   }
 
-
 }
 
 
-@media (max-width:400px) {
+@media (max-width:405px) {
 
-  /*btn*/
-  .mainvisual-title a:hover {
-    font-size: 1.6rem;
-  }
-
-  .mainvisual-title a:hover img {
-    width: 36px;
-  }
+/*step*/
+.step-right h2{
+font-size: 1.4rem;
+}
 
   #sp-navi-btn a {
     font-size: 1.1rem;
-  }
-
-  #sp-navi-btn a:hover {
-    font-size: 1.35rem;
-    color: white;
-    padding: 10px 25px 10px 30px;
-  }
-
-  #sp-navi-btn a:hover img {
-    width: 32px;
-  }
-
-
-  .join-btn a:hover {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border: 5px solid white;
-    background-color: #1EAA94;
-    border-radius: 50px;
-    box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.25);
-    opacity: 1;
-    padding: 5px 15px 10px;
-  }
-
-  .join-btn a:hover img {
-    width: 36px;
   }
 
 }
