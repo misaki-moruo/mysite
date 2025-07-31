@@ -720,7 +720,7 @@ p {
   position: absolute;
   top: 50%;
   right: 3%;
-  transform: translate(3%, -50%);
+  transform: translate(-3%, -50%);
 }
 
 
@@ -1707,6 +1707,7 @@ footer nav {
     font-size: 1.875rem;
   }
 
+
   .section-title img {
     width: 32px;
     margin-right: 10px;
@@ -1754,6 +1755,10 @@ footer nav {
 
 
   /* about */
+
+  #about {
+    padding-top: 70px;
+  }
 
   .about-contents-text-top {
     font-size: 1.5rem;
