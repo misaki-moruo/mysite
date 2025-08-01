@@ -576,6 +576,7 @@ p {
 
 .about-contents img {
   width: 40%;
+  margin-top: 35px;
 }
 
 .about-contents-text {
@@ -600,6 +601,9 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
 }
+
+
+
 
 
 .about-img {
@@ -820,6 +824,7 @@ p {
 #user-voice {
   background: url(./img/background02.png);
   background-size: cover;
+  background-position: center;
   padding-top: 100px;
 }
 
@@ -1032,6 +1037,7 @@ p {
 #faq {
   background-image: url(img/background02.png);
   background-size: cover;
+  background-position: center;
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -1526,6 +1532,7 @@ footer nav {
 
 
   /*user-voice*/
+  
   .section-title-around {
     margin: 50px auto;
   }
@@ -1807,6 +1814,10 @@ footer nav {
   padding-top: 70px;
 }
 
+.about-contents img {
+  margin-top: -30px;
+}
+
 .about-contents-text-top {
   font-size: 1.5rem;
 }
@@ -1992,6 +2003,28 @@ footer .footer_nav {
 @media (max-width:405px) {
 
 /* header   */
+
+#header .toggle_btn {
+  width: 30px;
+  height: 30px;
+}
+
+#header .toggle_btn span {
+  width: 30px;  
+}
+
+.header-logo,
+.sp-logo {
+  width: 180px;
+}
+
+#sp-navi .sp-logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+
 #sp-navi-btn a {
  font-size: 1.1rem;
 }
