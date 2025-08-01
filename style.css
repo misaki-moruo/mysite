@@ -1565,7 +1565,7 @@ footer nav {
   .interview-q p::before {
     content: "";
     position: absolute;
-    top: 55px;
+    top: 35px;
     right: 100%;
     border: 10px solid transparent;
     border-right: 10px solid #1EAA94;
@@ -1575,7 +1575,7 @@ footer nav {
   .interview-q p::after {
     content: "";
     position: absolute;
-    top: 59px;
+    top: 39px;
     right: 100%;
     border: 6.5px solid transparent;
     border-right: 6px solid #f3fffa;
@@ -2044,11 +2044,25 @@ footer .footer_nav {
   font-size: 1.1rem;
 }
 
+/*user-voice*/
+#user-voice {
+  background: url(./img/background03.png);
+  background-size: cover;
+  padding-top: 100px;
+}
+
 
 /*step*/
 .step-right h2{
 font-size: 1.4rem;
 }
 
+/*faq*/
+#faq{
+  background-image: url(img/background03.png);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
 }
