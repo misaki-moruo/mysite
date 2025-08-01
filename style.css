@@ -623,7 +623,7 @@ p {
 
 
 #introduction {
-  padding-top: 100px;
+  padding-top: 7%;
 }
 
 .introduction-list {
@@ -819,13 +819,14 @@ p {
 
 
 
+
 /*user-voice*/
 
 #user-voice {
   background: url(./img/background02.png);
   background-size: cover;
-  background-position: center;
-  padding-top: 100px;
+  background-position: top;
+  padding-top: 7%;
 }
 
 .voice-title h3 {
@@ -959,7 +960,7 @@ p {
 /* login*/
 
 #login {
-  padding-top: 100px;
+  padding-top: 7%;
 }
 
 .login-list {
@@ -1037,8 +1038,8 @@ p {
 #faq {
   background-image: url(img/background02.png);
   background-size: cover;
-  background-position: center;
-  padding-top: 100px;
+  background-position: top;
+  padding-top: 7%;
   padding-bottom: 50px;
 }
 
@@ -2077,25 +2078,25 @@ footer .footer_nav {
   font-size: 1.1rem;
 }
 
-/*user-voice*/
 #user-voice {
   background: url(./img/background03.png);
   background-size: cover;
-  padding-top: 100px;
+  background-position: top;
+  padding-top: 7%;
 }
-
 
 /*step*/
 .step-right h2{
 font-size: 1.4rem;
 }
 
-/*faq*/
-#faq{
+#faq {
   background-image: url(img/background03.png);
   background-size: cover;
-  padding-top: 100px;
+  background-position: top;
+  padding-top: 7%;
   padding-bottom: 50px;
 }
+
 
 }
